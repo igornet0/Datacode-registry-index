@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "packages": [
+    {
+      "name": "ml",
+      "source": "git+https://github.com/igornet0/ML-Datacode-lib.git",
+      "description": "Machine learning for DataCode. After clone, build cdylib and place libml.dylib (or libml.so) in the package root.",
+      "min_datacode": ">=2.0.0"
+    }
+  ]
+}
