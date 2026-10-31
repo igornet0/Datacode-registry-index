@@ -4,8 +4,40 @@
     {
       "name": "ml",
       "source": "git+https://github.com/igornet0/ML-Datacode-lib.git",
-      "description": "Machine learning for DataCode. After clone, build cdylib and place libml.dylib (or libml.so) in the package root.",
-      "min_datacode": ">=2.0.0"
+      "description": "Machine learning for DataCode. Prebuilt bundles for macOS (arm64/x86_64, Metal), Linux (x86_64/arm64) and Windows (x86_64) are installed automatically; set DPM_FROM_SOURCE=1 to build from source (e.g. for CUDA).",
+      "min_datacode": ">=2.0.0",
+      "artifacts": [
+        {
+          "target": "aarch64-apple-darwin",
+          "url": "https://github.com/igornet0/ML-Datacode-lib/releases/download/v0.1.2/ml-0.1.2-aarch64-apple-darwin.dcmodule",
+          "sha256": "c9db2551467dfacb75e0274ea34754c1091e50585e543095972315a64cd15ab3",
+          "version": "0.1.2"
+        },
+        {
+          "target": "aarch64-unknown-linux-gnu",
+          "url": "https://github.com/igornet0/ML-Datacode-lib/releases/download/v0.1.2/ml-0.1.2-aarch64-unknown-linux-gnu.dcmodule",
+          "sha256": "a74b6d828acf738193c1625d068a0995a2b24cdf43b1d64db761d2c34829aecb",
+          "version": "0.1.2"
+        },
+        {
+          "target": "x86_64-apple-darwin",
+          "url": "https://github.com/igornet0/ML-Datacode-lib/releases/download/v0.1.2/ml-0.1.2-x86_64-apple-darwin.dcmodule",
+          "sha256": "bdb654565884922be220e55a55e12c28a9d05a573fa7e1ba17d6bb944b6c6e8b",
+          "version": "0.1.2"
+        },
+        {
+          "target": "x86_64-pc-windows-msvc",
+          "url": "https://github.com/igornet0/ML-Datacode-lib/releases/download/v0.1.2/ml-0.1.2-x86_64-pc-windows-msvc.dcmodule",
+          "sha256": "0e0d2e41756a37657e09f604360f0275194acf15c3bc918df13f6ab72d8abe44",
+          "version": "0.1.2"
+        },
+        {
+          "target": "x86_64-unknown-linux-gnu",
+          "url": "https://github.com/igornet0/ML-Datacode-lib/releases/download/v0.1.2/ml-0.1.2-x86_64-unknown-linux-gnu.dcmodule",
+          "sha256": "8d7ebc5a074958959249b50ff2f635cdf5f4c7058984680f88f3e928f45fa5b8",
+          "version": "0.1.2"
+        }
+      ]
     }
   ]
 }
